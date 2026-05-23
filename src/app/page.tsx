@@ -48,7 +48,7 @@ const stats = [
 ];
 
 const skills = [
-  "React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js",
+  "React", "Vue", "Next.js", "TypeScript", "Tailwind CSS", "Node.js",
   "PostgreSQL", "Supabase", "Framer Motion", "Figma", "Git",
 ];
 
