@@ -84,6 +84,12 @@
       "sourceType": "github",
       "skillPath": "skills/stitch-skill/SKILL.md",
       "computedHash": "acf2921a7e50c06e637f072ba52e36a994cbb44ecbe6e31435bc113b894f5499"
+    },
+    "3d-pie-chart": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": ".agents/skills/3d-pie-chart/SKILL.md",
+      "computedHash": "custom"
     }
   }
 }

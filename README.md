@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/skills-20-blue?style=flat&logo=react" alt="Skills"></a>
+  <a href="#"><img src="https://img.shields.io/badge/skills-21-blue?style=flat&logo=react" alt="Skills"></a>
   <a href="#"><img src="https://img.shields.io/badge/agents-2-green?style=flat&logo=openai" alt="Agents"></a>
   <a href="#"><img src="https://img.shields.io/badge/MCP%20servers-7-orange?style=flat" alt="MCP Servers"></a>
   <a href="#"><img src="https://img.shields.io/badge/rules-7-purple?style=flat&logo=checkmarx" alt="Rules"></a>
@@ -19,7 +19,7 @@
 
 This is an **AI Frontend Launchpad** — a complete, portable environment for building production-quality frontends using AI.
 
-It bundles **20 specialized skills**, **2 review agents**, **7 MCP servers**, **7 coding rules**, and a full **design system** into one project. Clone it, run one setup command, and your AI assistant becomes a senior frontend designer capable of:
+It bundles **21 specialized skills**, **2 review agents**, **7 MCP servers**, **7 coding rules**, and a full **design system** into one project. Clone it, run one setup command, and your AI assistant becomes a senior frontend designer capable of:
 
 - Building entire pages and dashboards from a single prompt
 - Generating design systems with tokens, palettes, and typography scales
@@ -69,6 +69,7 @@ That's it. You now have a complete frontend design agent.
 | `emil-design-eng` | Emil Kowalski's UI polish philosophy — animation decision framework, spring physics, clip-path reveals, gesture handling, CSS transform mastery |
 | `image-to-code` | Generate premium design images first, then implement pixel-perfect code from them |
 | `gan-style-harness` | GAN-inspired generator-evaluator feedback loop — Planner → Generator → Evaluator with scoring across design quality, originality, craft, and functionality |
+| `3d-pie-chart` | Build 3D extruded donut/pie charts with React Three Fiber — per-segment THREE.Shape + ExtrudeGeometry, gold/glass materials, clip-plane reveal animations, mobile optimization |
 
 ###  Design Auditing & Anti-Pattern Detection
 
@@ -146,7 +147,7 @@ frontend-launchpad-agent/
 ├── MCP_WALKTHROUGH.md            # Complete MCP setup guide
 │
 ├── .agents/
-│   ├── skills/                   # 20 specialized skills
+│   ├── skills/                   # 21 specialized skills
 │   │   ├── design-system/               # Generate & audit design systems
 │   │   ├── frontend-design-direction/   # Purpose/audience inference
 │   │   ├── frontend-patterns/           # React component patterns
@@ -166,7 +167,8 @@ frontend-launchpad-agent/
 │   │   ├── imagegen-frontend-web/       # Web design image gen
 │   │   ├── imagegen-frontend-mobile/    # Mobile app image gen
 │   │   ├── design-taste-frontend/       # Anti-slop v2
-│   │   └── design-taste-frontend-v1/    # Anti-slop v1 (original)
+│   │   ├── design-taste-frontend-v1/    # Anti-slop v1 (original)
+│   │   └── 3d-pie-chart/                # 3D extruded donut charts
 │   │
 │   ├── react-reviewer.md         # React/JSX code review agent
 │   ├── a11y-architect.md         # WCAG 2.2 compliance agent
