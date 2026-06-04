@@ -9,7 +9,7 @@
   <a href="#"><img src="https://img.shields.io/badge/skills-21-blue?style=flat&logo=react" alt="Skills"></a>
   <a href="#"><img src="https://img.shields.io/badge/agents-2-green?style=flat&logo=openai" alt="Agents"></a>
   <a href="#"><img src="https://img.shields.io/badge/MCP%20servers-8-orange?style=flat" alt="MCP Servers"></a>
-  <a href="#"><img src="https://img.shields.io/badge/rules-7-purple?style=flat&logo=checkmarx" alt="Rules"></a>
+  <a href="#"><img src="https://img.shields.io/badge/rules-8-purple?style=flat&logo=checkmarx" alt="Rules"></a>
   <a href="#"><img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="License"></a>
 </p>
 
@@ -19,7 +19,7 @@
 
 This is an **AI Frontend Launchpad** — a complete, portable environment for building production-quality frontends using AI.
 
-It bundles **21 specialized skills**, **2 review agents**, **8 MCP servers**, **7 coding rules**, and a full **design system** into one project. Clone it, run one setup command, and your AI assistant becomes a senior frontend designer capable of:
+It bundles **21 specialized skills**, **2 review agents**, **8 MCP servers**, **8 coding rules**, and a full **design system** into one project. Clone it, run one setup command, and your AI assistant becomes a senior frontend designer capable of:
 
 - Building entire pages and dashboards from a single prompt
 - Generating design systems with tokens, palettes, and typography scales
@@ -121,6 +121,7 @@ That's it. You now have a complete frontend design agent.
 | `web-performance.md` | Next.js Image, lazy loading, bundle optimization |
 | `web-security.md` | XSS prevention, CSP headers, auth patterns |
 | `web-testing.md` | Playwright, Vitest, testing strategy |
+| `web-images.md` | AVIF conversion, size budgets, alt text |
 
 ###  MCP Servers (Extend the Agent's Reach)
 
@@ -148,6 +149,7 @@ frontend-launchpad-agent/
 ├── DESIGN.md                     # Design system tokens (dark-first portfolio)
 ├── ROADMAP.md                    # Project plan & architecture
 ├── MCP_WALKTHROUGH.md            # Complete MCP setup guide
+├── Netlify_insights.md           # Netlify CLI & analytics reference
 │
 ├── .opencode/
 │   └── mcp_servers.json          # MCP servers (21stdev, shadcn, ts-lsp)
@@ -186,7 +188,8 @@ frontend-launchpad-agent/
 │       ├── web-patterns.md
 │       ├── web-performance.md
 │       ├── web-security.md
-│       └── web-testing.md
+│       ├── web-testing.md
+│       └── web-images.md
 │
 ├── src/                          # Next.js 16 app (pre-scaffolded)
 │   ├── app/
