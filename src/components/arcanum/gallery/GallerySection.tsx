@@ -110,16 +110,9 @@ export default function GallerySection() {
   return (
     <section
       ref={ref}
-      className="relative py-24 md:py-32 bg-storm-void overflow-hidden"
+      className="relative py-24 md:py-32 overflow-hidden"
       aria-label="Gallery section - Artwork collection"
     >
-      {/* Dark background with subtle cathedral texture */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-storm-void via-storm-void to-storm-mist/5" />
-        {/* Subtle column textures on sides */}
-        <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-storm-mist/5 to-transparent" />
-        <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-storm-mist/5 to-transparent" />
-      </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-8">
         {/* Section Header */}

@@ -48,7 +48,7 @@ export default function ConScheduleSection() {
   const [expandedCon, setExpandedCon] = useState<string | null>(null);
 
   return (
-    <section id="events" className="relative py-24 md:py-32 px-6">
+    <section id="events" className="relative py-24 md:py-32 px-6 overflow-hidden">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <motion.div

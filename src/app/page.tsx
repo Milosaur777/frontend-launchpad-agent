@@ -101,9 +101,9 @@ export default function Home() {
   );
 
   return (
-    <div className="relative bg-storm-void overflow-x-hidden">
+    <div className="relative overflow-x-hidden">
       {/* ═══════ Mana Particles + Energy Orbs Layer ═══════ */}
-      <div className="fixed inset-0 pointer-events-none z-20 overflow-hidden w-full h-full">
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden w-full h-full">
         {particles.map((p) => (
           <ManaParticle key={p.id} {...p} />
         ))}
@@ -117,7 +117,7 @@ export default function Home() {
 
       <Navigation />
       
-      <main className="relative z-10 flex flex-col">
+      <main className="relative flex flex-col">
         {/* Hero Section - The Storm-Crowned Castle */}
         <div id="hero">
           <HeroSection />

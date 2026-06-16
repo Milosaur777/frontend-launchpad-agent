@@ -59,10 +59,10 @@ export default function Navigation() {
               </span>
             </button>
 
-            {/* Right side group: Nav Links + Hamburger (close together) */}
-            <div className="flex items-center gap-2 md:gap-4 shrink-0">
+            {/* Right side group: Nav Links + Hamburger */}
+            <div className="flex items-center gap-4 md:gap-4 shrink-0">
               {/* Nav Links - all screens */}
-              <nav className="flex items-center gap-3 md:gap-4 shrink-0">
+              <nav className="flex items-center gap-4 md:gap-6 shrink-0">
                 {/* Divider - desktop only */}
                 <div className="hidden md:block w-px h-6 bg-storm-moon/20" />
                 
@@ -70,7 +70,7 @@ export default function Navigation() {
                   <button
                     key={link.href}
                     onClick={() => scrollToSection(link.href)}
-                    className="font-cinzel text-[10px] md:text-sm font-bold text-storm-moon/60 hover:text-parchment-gold hover:text-glow-gold hover:drop-shadow-[0_0_8px_rgba(212,154,26,0.5)] transition-all duration-300 tracking-wider md:tracking-widest uppercase cursor-pointer whitespace-nowrap"
+                    className="font-cinzel text-xs md:text-base font-bold text-storm-moon/80 hover:text-parchment-gold hover:text-glow-gold hover:drop-shadow-[0_0_8px_rgba(212,154,26,0.5)] transition-all duration-300 tracking-wider md:tracking-widest uppercase cursor-pointer whitespace-nowrap"
                   >
                     <span className="md:hidden">{link.mobileLabel || link.label}</span>
                     <span className="hidden md:inline">{link.label}</span>

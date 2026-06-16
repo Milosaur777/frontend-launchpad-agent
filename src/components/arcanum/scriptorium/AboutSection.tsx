@@ -27,11 +27,11 @@ export default function AboutSection() {
             />
 
             {/* Text overlay positioned on the parchment */}
-            <div className="absolute top-[150px] left-1/2 -translate-x-1/2 w-[70%] md:w-[60%] text-center">
-              <p className="font-exocet text-xl md:text-2xl leading-snug text-parchment-ink/90">
+            <div className="absolute top-[150px] left-1/2 -translate-x-1/2 w-[85%] md:w-[75%] text-center px-4">
+              <p className="font-exocet text-4xl md:text-5xl leading-snug text-[#8b0000]">
                 I am a digital artist and worldbuilder passionate about art, games and the stories that linger in forgotten places.
               </p>
-              <p className="font-exocet text-xl md:text-2xl leading-snug text-parchment-ink/90 mt-4">
+              <p className="font-exocet text-4xl md:text-5xl leading-snug text-[#8b0000] mt-6">
                 Through light, shadow, I strive to evoke emotion and mystery, inviting you to step into realms where imagination and darkness entwine.
               </p>
             </div>
