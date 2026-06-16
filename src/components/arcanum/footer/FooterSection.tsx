@@ -10,7 +10,7 @@ export default function FooterSection() {
 
   return (
     <footer
-      className="relative pt-8 pb-6 overflow-hidden"
+      className="relative pt-8 pb-6 bg-storm-void overflow-hidden"
       aria-label="Footer"
     >
       {/* Top decorative border */}
