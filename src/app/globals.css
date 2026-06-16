@@ -2,14 +2,50 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* Exocet Font - Dark Fantasy Display */
+@font-face {
+  font-family: 'Exocet';
+  src: url('/fonts/exocet.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-geist-sans);
+  --font-sans: var(--font-cormorant);
+  --font-heading: var(--font-cinzel);
+  --font-display: var(--font-blackletter);
+  --font-mono: var(--font-cinzel);
+  
+  /* Storm Phase Colors */
+  --color-storm-void: #0a0a0f;
+  --color-storm-mist: #1a1a2e;
+  --color-storm-cloud: #2d2d44;
+  --color-storm-castle: #050505;
+  --color-storm-moon: #c0c0d0;
+  --color-storm-lightning: #e0e0ff;
+  --color-storm-blood: #8b0000;
+  
+  /* Parchment Phase Colors */
+  --color-parchment-base: #d4a373;
+  --color-parchment-dark: #a67c52;
+  --color-parchment-ink: #2c1810;
+  --color-parchment-gold: #c2ac7b;
+  --color-parchment-crimson: #8b0000;
+  --color-parchment-blue: #1e3a5f;
+  --color-parchment-cream: #f5e6d3;
+  
+  /* Void Phase Colors */
+  --color-void-black: #050505;
+  --color-void-purple: #4a0e4e;
+  --color-void-star: #ffffff;
+  --color-void-raven: #0a0a0a;
+  --color-void-crimson: #8b0000;
+  
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -48,40 +84,40 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* Dark-first portfolio palette */
+/* Arcanum Dark Fantasy Palette */
 :root {
-  --background: #0a0a0a;
+  --background: #0a0a0f;
   --foreground: #fafafa;
   --card: #171717;
   --card-foreground: #fafafa;
   --popover: #171717;
   --popover-foreground: #fafafa;
-  --primary: #3b82f6;
-  --primary-foreground: #ffffff;
-  --secondary: #171717;
+  --primary: #c2ac7b;
+  --primary-foreground: #0a0a0f;
+  --secondary: #1a1a2e;
   --secondary-foreground: #fafafa;
   --muted: #262626;
-  --muted-foreground: #737373;
-  --accent: #3b82f6;
+  --muted-foreground: #a3a3a3;
+  --accent: #8b0000;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
   --border: #262626;
   --input: #262626;
-  --ring: #3b82f6;
-  --chart-1: #3b82f6;
+  --ring: #c2ac7b;
+  --chart-1: #c2ac7b;
   --chart-2: #22c55e;
   --chart-3: #eab308;
   --chart-4: #ef4444;
   --chart-5: #a855f7;
   --radius: 0.5rem;
-  --sidebar: #171717;
+  --sidebar: #0a0a0f;
   --sidebar-foreground: #fafafa;
-  --sidebar-primary: #3b82f6;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #262626;
+  --sidebar-primary: #c2ac7b;
+  --sidebar-primary-foreground: #0a0a0f;
+  --sidebar-accent: #1a1a2e;
   --sidebar-accent-foreground: #fafafa;
   --sidebar-border: #262626;
-  --sidebar-ring: #3b82f6;
+  --sidebar-ring: #c2ac7b;
 }
 
 @layer base {
@@ -90,8 +126,194 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-cormorant), serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-cinzel), serif;
   }
   html {
-    @apply font-sans;
+    scroll-behavior: auto;
   }
+}
+
+/* Custom utility classes for the Arcanum theme */
+@layer utilities {
+  .font-blackletter {
+    font-family: var(--font-blackletter), cursive;
+  }
+  .font-cinzel {
+    font-family: var(--font-cinzel), serif;
+  }
+  .font-cormorant {
+    font-family: var(--font-cormorant), serif;
+  }
+  .font-exocet {
+    font-family: 'Exocet', var(--font-cinzel), serif;
+  }
+  .text-storm-void {
+    color: #0a0a0f;
+  }
+  .text-parchment-gold {
+    color: #c2ac7b;
+  }
+  .text-parchment-ink {
+    color: #2c1810;
+  }
+  .bg-storm-void {
+    background-color: #0a0a0f;
+  }
+  .bg-parchment-base {
+    background-color: #d4a373;
+  }
+  .bg-void-black {
+    background-color: #050505;
+  }
+  .text-glow-gold {
+    text-shadow: 0 0 20px rgba(212, 154, 26, 0.5), 0 0 40px rgba(212, 154, 26, 0.3);
+  }
+  .text-glow-crimson {
+    text-shadow: 0 0 20px rgba(139, 0, 0, 0.5), 0 0 40px rgba(139, 0, 0, 0.3);
+  }
+}
+
+/* Parchment texture pattern */
+.parchment-texture {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+  background-color: #d4a373;
+}
+
+/* Mist drift animation */
+@keyframes mist-drift {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(-30px) translateY(-10px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+.mist-drift {
+  animation: mist-drift 20s ease-in-out infinite;
+}
+
+.mist-drift-slow {
+  animation: mist-drift 30s ease-in-out infinite;
+}
+
+.mist-drift-fast {
+  animation: mist-drift 15s ease-in-out infinite;
+}
+
+/* Godray animation */
+@keyframes godray-shift {
+  0%, 100% { opacity: 0.6; transform: skewX(-2deg); }
+  50% { opacity: 0.8; transform: skewX(2deg); }
+}
+
+.godray-shift {
+  animation: godray-shift 8s ease-in-out infinite;
+}
+
+/* Star twinkle animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.star-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+/* Wax seal pulse */
+@keyframes wax-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(139, 0, 0, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(139, 0, 0, 0); }
+}
+
+.wax-pulse {
+  animation: wax-pulse 3s ease-in-out infinite;
+}
+
+/* Scroll indicator bounce */
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+.scroll-bounce {
+  animation: scroll-bounce 2s ease-in-out infinite;
+}
+
+/* Title subtle pulse animation */
+@keyframes title-pulse {
+  0%, 100% { 
+    text-shadow: 0 0 20px rgba(212, 154, 26, 0.5), 0 0 40px rgba(212, 154, 26, 0.3);
+  }
+  50% { 
+    text-shadow: 0 0 30px rgba(212, 154, 26, 0.7), 0 0 60px rgba(212, 154, 26, 0.5), 0 0 80px rgba(212, 154, 26, 0.2);
+  }
+}
+
+.title-pulse {
+  animation: title-pulse 4s ease-in-out infinite;
+}
+
+/* Subtitle subtle pulse animation - smaller glow */
+@keyframes subtitle-pulse {
+  0%, 100% { 
+    text-shadow: 0 0 10px rgba(212, 154, 26, 0.3), 0 0 20px rgba(212, 154, 26, 0.2);
+  }
+  50% { 
+    text-shadow: 0 0 15px rgba(212, 154, 26, 0.5), 0 0 30px rgba(212, 154, 26, 0.3), 0 0 40px rgba(212, 154, 26, 0.1);
+  }
+}
+
+.subtitle-pulse {
+  animation: subtitle-pulse 4s ease-in-out infinite;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .mist-drift,
+  .mist-drift-slow,
+  .mist-drift-fast,
+  .godray-shift,
+  .star-twinkle,
+  .wax-pulse,
+  .scroll-bounce,
+  .title-pulse,
+  .subtitle-pulse {
+    animation: none;
+  }
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(194, 172, 123, 0.3);
+  color: #fafafa;
 }

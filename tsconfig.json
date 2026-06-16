@@ -30,5 +30,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "Anime Artist", "Areno Crypto Project", "LP2", "Milos art portfolio", "Sector1 Webflow Backup", "temp"]
 }
