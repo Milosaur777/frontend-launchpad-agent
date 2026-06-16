@@ -43,7 +43,7 @@ export default function Navigation() {
         }`}
       >
         <div className="mx-auto max-w-7xl px-3 md:px-8">
-          <div className="flex h-16 md:h-20 items-center justify-between md:justify-center gap-2 md:gap-4">
+          <div className="flex h-14 md:h-16 items-center justify-between md:justify-center gap-2 md:gap-4">
             {/* Logo - always visible on all screens */}
             <button
               onClick={() => scrollToSection("#hero")}
@@ -52,7 +52,7 @@ export default function Navigation() {
               <img
                 src="/images/logo-m.png"
                 alt="Milo's Arcanum"
-                className="h-16 md:h-32 w-auto group-hover:drop-shadow-[0_0_8px_rgba(212,154,26,0.6)] transition-all duration-300"
+                className="h-14 md:h-20 w-auto group-hover:drop-shadow-[0_0_8px_rgba(212,154,26,0.6)] transition-all duration-300"
               />
               <span className="font-exocet text-sm md:text-base font-bold tracking-widest hidden sm:block group-hover:text-glow-gold transition-all duration-300" style={{ color: '#c2ac7b' }}>
                 Arcanum

@@ -17,7 +17,7 @@ export default function FooterSection() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-parchment-gold/30 to-transparent" />
 
       {/* Content */}
-      <div className="relative mx-auto max-w-4xl px-4">
+      <div className="relative z-10 mx-auto max-w-4xl px-4">
         {/* Logo centered */}
         <div className="flex flex-col items-center mb-4">
           <img

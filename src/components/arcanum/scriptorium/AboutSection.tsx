@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function AboutSection() {
   return (
     <section 
-      className="relative py-24 md:py-32 min-h-screen bg-storm-void overflow-hidden"
+      className="relative py-24 md:py-32 min-h-screen overflow-hidden"
       aria-label="About section"
     >
       {/* Content */}
@@ -27,11 +27,11 @@ export default function AboutSection() {
             />
 
             {/* Text overlay positioned on the parchment */}
-            <div className="absolute top-[150px] left-1/2 -translate-x-1/2 w-[85%] md:w-[75%] text-center px-4">
-              <p className="font-exocet text-4xl md:text-5xl leading-snug text-[#8b0000]">
+            <div className="absolute top-[150px] left-1/2 -translate-x-1/2 w-[90%] md:w-[80%] text-center">
+              <p className="font-blackletter text-[26px] md:text-[38px] leading-snug text-[#8b0000]">
                 I am a digital artist and worldbuilder passionate about art, games and the stories that linger in forgotten places.
               </p>
-              <p className="font-exocet text-4xl md:text-5xl leading-snug text-[#8b0000] mt-6">
+              <p className="font-blackletter text-[26px] md:text-[38px] leading-snug text-[#8b0000] mt-6">
                 Through light, shadow, I strive to evoke emotion and mystery, inviting you to step into realms where imagination and darkness entwine.
               </p>
             </div>
