@@ -1,1 +1,0 @@
-"""Backtest package for PolyCryptoAlpha."""
