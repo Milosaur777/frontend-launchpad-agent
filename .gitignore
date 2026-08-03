@@ -41,21 +41,35 @@ next-env.d.ts
 # Logs
 *.log
 
-.vercel
-
 # Password store
 **/pass/
 
 # Unrelated projects
 Anime Artist/
 Areno Crypto Project/
+Bullvengance/
 LP2/
 LP3/
-Sector1 Webflow Backup/
-IPTV/
 OC Dating Platform/
+OC-DateApp/
+Omniaterminal/
+Sector1 Webflow Backup/
+"Webdesign Assets"/
+IPTV/
 CryptoGameBot/
+welcometoavax/
 temp/
+
+# Cross-project leak patterns (prevent other apps from overwriting this one)
+public/Bullvengance/
+public/xbullvengers/
+src/app/xbullvengers/
+src/app/api/forge/
+src/components/xbullvengers/
+src/lib/xbullvengers/
 
 # Source assets (raw PNGs, PSDs, etc.)
 Milos art portfolio/
+
+# Local Netlify folder
+.netlify

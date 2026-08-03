@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/skills-21-blue?style=flat&logo=react" alt="Skills"></a>
+  <a href="#"><img src="https://img.shields.io/badge/skills-139-blue?style=flat&logo=react" alt="Skills"></a>
   <a href="#"><img src="https://img.shields.io/badge/agents-2-green?style=flat&logo=openai" alt="Agents"></a>
   <a href="#"><img src="https://img.shields.io/badge/MCP%20servers-8-orange?style=flat" alt="MCP Servers"></a>
   <a href="#"><img src="https://img.shields.io/badge/rules-8-purple?style=flat&logo=checkmarx" alt="Rules"></a>
@@ -19,7 +19,7 @@
 
 This is an **AI Frontend Launchpad** — a complete, portable environment for building production-quality frontends using AI.
 
-It bundles **21 specialized skills**, **2 review agents**, **8 MCP servers**, **8 coding rules**, and a full **design system** into one project. Clone it, run one setup command, and your AI assistant becomes a senior frontend designer capable of:
+It bundles **139 specialized skills** (21 core + 118 MengTo), **2 review agents**, **8 MCP servers**, **8 coding rules**, and a full **design system** into one project. Clone it, run one setup command, and your AI assistant becomes a senior frontend designer capable of:
 
 - Building entire pages and dashboards from a single prompt
 - Generating design systems with tokens, palettes, and typography scales
@@ -154,8 +154,10 @@ frontend-launchpad-agent/
 ├── .opencode/
 │   └── mcp_servers.json          # MCP servers (21stdev, shadcn, ts-lsp)
 │
+├── design-md/                    # 74 curated DESIGN.md reference files
+│
 ├── .agents/
-│   ├── skills/                   # 21 specialized skills
+│   ├── skills/                   # 139 specialized skills (21 core + 118 MengTo)
 │   │   ├── design-system/               # Generate & audit design systems
 │   │   ├── frontend-design-direction/   # Purpose/audience inference
 │   │   ├── frontend-patterns/           # React component patterns
@@ -363,6 +365,40 @@ This agent is built on the shoulders of many open-source projects:
 - **[Framer Motion](https://motion.dev)** — Animation library
 - **[Lucide](https://lucide.dev)** — Icon library
 - **[Sonner](https://sonner.emilkowal.ski)** — Toast notifications
+
+### Extended Skill Library (MengTo)
+
+118 additional skills from [MengTo/Skills](https://github.com/MengTo/Skills) — copy-paste ready playbooks for:
+
+| Category | Example Skills |
+|---|---|
+| Web design | `build-awwwards-quality-sites`, `landing-page`, `pricing-page`, `tailwindcss`, `gsap`, `threejs`, `vantajs`, `cobejs` |
+| Motion & scroll | `animation-on-scroll`, `cinematic-gsap-lenis-motion-system`, `staggered-word-reveal`, `marquee-loop` |
+| WebGL & 3D | `add-shader-cursor-trail`, `globe-gl`, `globe-particles`, `matterjs`, `webgl-3d-object`, `webgl-laser` |
+| CSS effects | `beautiful-shadows`, `css-border-gradient`, `progressive-blur`, `gooey-blob-system`, `solar-duotone-bold` |
+| Visual styles | `dark-glass-clean-layout`, `mesh-gradient-dark-blue-clean`, `editorial-tech`, `blue-laser-clean-glass-layout` |
+| Layout systems | `agency-grid-layout-minimal`, `framed-grid-layout`, `nested-container-frames`, `split-layout-technical` |
+| Codex workflows | `video-to-superprompt`, `daily-ui-inspiration-capture`, `stitched-full-page-capture`, `browser-video-recording` |
+| Media | `aura-asset-images`, `unsplash-asset-images` |
+| Game dev | `build-isometric-arpg`, `build-threejs-enemy-systems`, `design-action-combat`, `test-playable-web-games` |
+
+All prefixed as `mengto-<category>-<skill>` in `.agents/skills/`.
+
+### Design Reference Library
+
+74 curated `DESIGN.md` files from [Awesome Design MD](https://github.com/VoltAgent/awesome-design-md) — real-world design systems extracted from brands like:
+
+Apple, Stripe, Nike, Linear, Vercel, Figma, Framer, Airbnb, Spotify, Uber, Tesla, Shopify, Notion, Cal.com, and 60+ more.
+
+Drop any `DESIGN.md` into a project and the agent instantly understands the brand's palette, typography, spacing, and component rules.
+
+Stored in `design-md/`.
+
+### Web Scraping & Research
+
+| Tool | What It Does |
+|---|---|
+| **Crawl4AI** | LLM-friendly web crawler — scrape competitor sites, extract clean markdown, capture full-page screenshots, deep-crawl with BFS/DFS. `pip install crawl4ai` + `crawl4ai-setup` |
 
 ---
 

@@ -28,11 +28,20 @@ export default function AboutSection() {
 
             {/* Text overlay positioned on the parchment */}
             <div className="absolute top-[60px] left-1/2 -translate-x-1/2 w-[70%] md:w-[60%] text-center">
-              <p className="font-blackletter text-[20px] md:text-[32px] leading-snug text-[#8b0000]">
-                I am a digital artist and worldbuilder passionate about art, games and the stories that linger in forgotten places.
+              <p className="font-blackletter text-[16px] md:text-[26px] leading-snug text-parchment-ink md:text-[#8b0000]">
+                Hi, I'm Milo
               </p>
-              <p className="font-blackletter text-[20px] md:text-[32px] leading-snug text-[#8b0000] mt-6">
-                Through light, shadow, I strive to evoke emotion and mystery, inviting you to step into realms where imagination and darkness entwine.
+              <p className="font-blackletter text-[13px] md:text-[22px] leading-snug text-parchment-ink md:text-[#8b0000] mt-4">
+                I'm a digital artist, full-stack developer and lifelong creator with a passion for sci-fi, games, anime and music.
+              </p>
+              <p className="font-blackletter text-[13px] md:text-[22px] leading-snug text-parchment-ink md:text-[#8b0000] mt-4">
+                For the past several years I've been building web applications, workflow automations for businesses. I enjoy solving complex problems and turning ambitious ideas into polished products.
+              </p>
+              <p className="font-blackletter text-[13px] md:text-[22px] leading-snug text-parchment-ink md:text-[#8b0000] mt-4">
+                Outside of client work, I love building passion projects that combine technology with creativity. One of those projects is Unhinged, a dating platform designed specifically for role-players to meet in-character, discover new stories, and connect with like-minded people.
+              </p>
+              <p className="font-blackletter text-[13px] md:text-[22px] leading-snug text-parchment-ink md:text-[#8b0000] mt-4">
+                Welcome to my world.
               </p>
             </div>
           </div>

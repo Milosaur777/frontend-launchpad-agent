@@ -13,6 +13,7 @@ interface ArtworkItem {
   image: string;
   materials: string;
   thoughts: string;
+  link?: string;
 }
 
 const artworks: ArtworkItem[] = [
@@ -24,7 +25,7 @@ const artworks: ArtworkItem[] = [
     etiquette: "Sketch",
     image: "/images/sketches/witchfighter.avif",
     materials: "ArtRage Vitae (digital, pencil simulation)",
-    thoughts: "A zoner, a love letter to fighting games. Laser whip in one hand, floating above the ground, casting spells before you close the gap. The animations that made me fall in love with drawing are all here.",
+    thoughts: "A love letter to fighting games. She is a zoner who hovers above the battlefield, wielding a laser whip and weaving spells before opponents can get within striking range. Fighting game animation is what made me fall in love with drawing.",
   },
   {
     id: 2,
@@ -76,12 +77,35 @@ const artworks: ArtworkItem[] = [
     materials: "ArtRage Vitae (digital, pencil simulation)",
     thoughts: "Neither man nor woman, I set out to draw the most androgynous figure I could.",
   },
+  {
+    id: 7,
+    title: "Welcome to AVAX",
+    year: "2026",
+    category: "Websites",
+    etiquette: "Website",
+    image: "/images/webpages/welcome-to-avax.avif",
+    materials: "OpenCode - Kimi K3",
+    thoughts: "Crypto project. Scans your crypto wallet for NFTs that allow you to buy a certain amount of a meme coin.",
+    link: "https://welcometoavax.vercel.app",
+  },
+  {
+    id: 8,
+    title: "Unhinged RP",
+    year: "2026",
+    category: "Websites",
+    etiquette: "Website",
+    image: "/images/webpages/unhinged-rp.avif",
+    materials: "OpenCode - Kimi K3, Supabase and N8N integration",
+    thoughts: "Dating platform for people with role-playing and original characters. Create your character, swipe on other people's characters, and find a match to communicate over an encrypted chat.",
+    link: "https://unhinged-rp.vercel.app",
+  },
 ];
 
-const categories = ["All", "Sketches"];
+const categories = ["All", "Sketches", "Websites"];
 
 const etiquetteColors: Record<string, string> = {
   "Sketch": "bg-parchment-crimson text-white",
+  "Website": "bg-parchment-blue text-white",
 };
 
 export default function GallerySection() {
@@ -271,6 +295,23 @@ function ArtworkCard({ artwork, isExpanded, onToggle }: { artwork: ArtworkItem; 
             <p className="font-cormorant text-sm text-storm-moon/60 leading-relaxed">
               {artwork.thoughts}
             </p>
+
+            {/* External link */}
+            {artwork.link && (
+              <a
+                href={artwork.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-cinzel text-xs text-parchment-gold hover:text-parchment-gold/80 hover:underline tracking-wider uppercase transition-colors mt-1 cursor-pointer"
+              >
+                {artwork.link.replace(/^https?:\/\//, "")}
+                <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -1,0 +1,3 @@
+remove-ai-watermarks>=1.0.0
+Pillow>=10.0.0
+opencv-python>=4.9.0

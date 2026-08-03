@@ -30,5 +30,30 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "Anime Artist", "Areno Crypto Project", "LP2", "Milos art portfolio", "Sector1 Webflow Backup", "temp"]
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "Anime Artist",
+    "Areno Crypto Project",
+    "Bullvengance",
+    "CryptoGameBot",
+    "FLstudio",
+    "IPTV",
+    "Just One Boardgame",
+    "LP2",
+    "LP3",
+    "Milos art portfolio",
+    "OC Dating Platform",
+    "OC-DateApp",
+    "Omniaterminal",
+    "PolyCryptoAlpha",
+    "Remove Watermark",
+    "Sector1 Webflow Backup",
+    "Solana Trading Bot",
+    "Switch User",
+    "temp",
+    "welcometoavax",
+    "Webdesign Assets"
+  ]
 }
