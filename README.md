@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/skills-139-blue?style=flat&logo=react" alt="Skills"></a>
+  <a href="#"><img src="https://img.shields.io/badge/skills-140-blue?style=flat&logo=react" alt="Skills"></a>
   <a href="#"><img src="https://img.shields.io/badge/agents-2-green?style=flat&logo=openai" alt="Agents"></a>
   <a href="#"><img src="https://img.shields.io/badge/MCP%20servers-8-orange?style=flat" alt="MCP Servers"></a>
   <a href="#"><img src="https://img.shields.io/badge/rules-8-purple?style=flat&logo=checkmarx" alt="Rules"></a>
@@ -19,7 +19,7 @@
 
 This is an **AI Frontend Launchpad** — a complete, portable environment for building production-quality frontends using AI.
 
-It bundles **139 specialized skills** (21 core + 118 MengTo), **2 review agents**, **8 MCP servers**, **8 coding rules**, and a full **design system** into one project. Clone it, run one setup command, and your AI assistant becomes a senior frontend designer capable of:
+It bundles **140 specialized skills** (21 core + 118 MengTo + 1 pipeline), **2 review agents**, **8 MCP servers**, **8 coding rules**, and a full **design system** into one project. Clone it, run one setup command, and your AI assistant becomes a senior frontend designer capable of:
 
 - Building entire pages and dashboards from a single prompt
 - Generating design systems with tokens, palettes, and typography scales
@@ -102,6 +102,13 @@ That's it. You now have a complete frontend design agent.
 | `imagegen-frontend-web` | Generate one separate horizontal image per website section — premium composition variety, narrative concept spine, consistent palette |
 | `imagegen-frontend-mobile` | Premium mobile app screen concepts — onboarding, auth, dashboards, fintech, ecommerce, inside device mockup frames |
 
+###  Content Pipeline & Research
+
+| Skill | What It Does |
+|---|---|
+| `content-pipeline` | Scrape YouTube playlists, Instagram saved collections, podcasts, web articles → transcribe with Whisper → LLM summary → structured Obsidian notes with tags, backlinks, and folder organization |
+| `crawl4ai` | LLM-friendly web crawler — competitor research, article extraction, full-page screenshots, deep-crawl with BFS/DFS |
+
 ###  Code Quality & Enforcement
 
 | Skill / Agent | What It Does |
@@ -178,7 +185,8 @@ frontend-launchpad-agent/
 │   │   ├── imagegen-frontend-mobile/    # Mobile app image gen
 │   │   ├── design-taste-frontend/       # Anti-slop v2
 │   │   ├── design-taste-frontend-v1/    # Anti-slop v1 (original)
-│   │   └── 3d-pie-chart/                # 3D extruded donut charts
+│   │   ├── 3d-pie-chart/                # 3D extruded donut charts
+│   │   └── content-pipeline/            # Scrape → transcribe → summarize → Obsidian
 │   │
 │   ├── react-reviewer.md         # React/JSX code review agent
 │   ├── a11y-architect.md         # WCAG 2.2 compliance agent
